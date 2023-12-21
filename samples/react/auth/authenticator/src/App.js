@@ -2,18 +2,11 @@ import React from 'react';
 import './App.css';
 import logo from './logo.svg';
 import { useAuthenticator, Authenticator } from '@aws-amplify/ui-react';
-import { Amplify } from 'aws-amplify';
-//import awsconfig from './aws-exports';
+
+
 import '@aws-amplify/ui-react/styles.css';
 
-Amplify.configure({
-  
-  Auth:{
-    region : process.env.REACT_APP_REGION,
-    userPoolId: process.env.REACT_APP_USER_POOL_ID,
-    userPoolClientId: process.env.REACT_APP_USER_POOL_CLIENT_ID
-  }
-});
+
 
 const App = () => {
   // Use the value of authStatus to decide which page to render
