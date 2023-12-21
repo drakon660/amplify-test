@@ -6,10 +6,16 @@ import { Amplify } from 'aws-amplify';
 //import awsconfig from './aws-exports';
 import '@aws-amplify/ui-react/styles.css';
 
-//Amplify.configure(awsconfig);
+Amplify.configure({
+  
+  Auth:{
+    region : process.env.REACT_APP_REGION,
+    userPoolId: process.env.REACT_APP_USER_POOL_ID,
+    userPoolClientId: process.env.REACT_APP_USER_POOL_CLIENT_ID
+  }
+});
 
 const App = () => {
-
   // Use the value of authStatus to decide which page to render
  return (
     <>
