@@ -18,6 +18,7 @@ const awsmobile = {
   "aws_user_pools_id": "us-east-1_G7QZtxQ9i",
   "aws_user_pools_web_client_id": "54olg979trkdbgrgifqdn86jn"
 };
+
 Amplify.configure({Auth:auth});
 console.log(Amplify.getConfig());
 console.log({Auth:auth});
