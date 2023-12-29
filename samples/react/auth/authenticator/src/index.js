@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import awsconfig from './aws-exports';
+//import awsconfig from './aws-exports';
 import { Amplify } from 'aws-amplify';
+
 const auth = {
   Cognito:{
     userPoolClientId: process.env.REACT_APP_USER_POOL_CLIENT_ID,
